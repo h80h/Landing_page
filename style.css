@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   max-height: 100vh;
   display: flex;
@@ -9,7 +9,7 @@ body {
 .header,
 .hero,
 .CTA {
-  padding: 0 150px;
+  padding: 0 250px;
 }
 
 .header,
@@ -47,23 +47,51 @@ a {
 
 .hero {
   display: flex;
+  flex: 1;
   justify-content: space-between;
-  padding: 70px 150px
+  padding: 70px 250px;
+  gap: 30px;
 }
 
 .hero_img{
-  width: 500px;  /* Adjust size as needed */
-  height: auto; /* Should be the same as width for a perfect circle */
+  width: 400px; 
+  height: auto;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+} 
 
-}
 
 .header a,
 .hero {
   color: #e5e7eb;
+}
+
+.hero .title {
+  font-size: 48px;
+  color: #F9FAF8;
+  font-weight: 900;
+}
+
+.header li,
+.hero .text {
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+.hero .text{
+  margin-top: 10px;
+}
+
+button {
+  background-color: #3882F6;
+  color: #F9FAF8;
+  font-weight: bold;
+  border-style: none;
+  padding: 7px 21px;
+  border-radius: 5px;
+  margin-top: 45px;
 }
 
 .info_area {
@@ -101,7 +129,7 @@ a {
 }
 
 .info_header {
-  padding: 8px 0 3px 0;
+  padding: 10px 0 5px 0;
   font-weight: bolder;
 }
 
