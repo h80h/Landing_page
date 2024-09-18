@@ -1,23 +1,22 @@
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
-  max-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.header,
-.hero,
-.CTA {
-  padding: 0 250px;
 }
 
 .header,
 .hero {
+  display: flex;
+  justify-content: center;
   background-color: #1f2937;
 }
 
-.header {
+.header .container,
+.hero .container, 
+.CTA .container {
+  width: 800px;
+}
+
+.header .container{
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
@@ -27,6 +26,9 @@ body {
   width: 48px;  /* Adjust size as needed */
   height: 48px; /* Should be the same as width for a perfect circle */
   border-radius: 50%;
+  /* border-color: #c6c6c6;
+  border-style: solid;
+  border-width: 1.8px; */
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -45,12 +47,10 @@ a {
   text-decoration: none;
 }
 
-.hero {
+.hero .container{
   display: flex;
-  flex: 1;
   justify-content: space-between;
-  padding: 70px 250px;
-  gap: 30px;
+  padding: 70px 0px 90px 0px;
 }
 
 .hero_img{
@@ -89,20 +89,23 @@ button {
   color: #F9FAF8;
   font-weight: bold;
   border-style: none;
-  padding: 7px 21px;
+  padding: 5px 18px;
   border-radius: 5px;
+}
+
+.hero button {
   margin-top: 45px;
 }
 
 .info_area {
-  padding: 0 180px;
+  padding-bottom: 80px;
 }
 
 .info_title {
+  font-size: 24px;
   text-align: center;
-  padding: 30px 0;
+  padding: 45px 0;
   font-weight: bolder;
-  font-size: x-large;
 }
 
 .info_container {
@@ -129,6 +132,7 @@ button {
 }
 
 .info_header {
+  font-size: 18px;
   padding: 10px 0 5px 0;
   font-weight: bolder;
 }
@@ -136,4 +140,77 @@ button {
 .info {
   flex-wrap: wrap;
   width: 150px;
+}
+
+.info-text{
+  font-size: 18px;
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  background-color: #E5E7EB;
+}
+
+.quote .container {
+  width: 750px;
+  padding: 80px 0px;
+}
+
+.quote .quotation {
+  font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+  padding-top: 30px;
+}
+
+.quote .celebrity {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: end;
+  padding-top: 10px;
+  padding-right: 30px;
+}
+
+.CTA {
+  display: flex;
+  justify-content: center;
+  padding: 75px 0;
+}
+
+.CTA .container{
+  background-color: #3882F6;
+  border-radius: 5px;
+}
+
+.CTA .inner_container {
+  padding: 50px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.CTA .slogan {
+  font-size: 24px;
+  font-weight: bold;
+  color: #F9FAF8;
+  word-spacing: 8px;
+  letter-spacing: 1.5px;
+}
+
+.CTA .calling {
+  color: #F9FAF8;
+}
+
+.CTA button {
+  border-color: #F9FAF8;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.footer {
+  background-color: #1f2937;
+  color: #e5e7eb;
+  text-align: center;
+  padding: 28px 0;
 }
